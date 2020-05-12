@@ -1,0 +1,6 @@
+--Enter the columns which has to be compared
+Employee_Grade
+Headcount
+Client_Billable
+Non_Client
+Client_Non_Billable

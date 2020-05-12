@@ -1,0 +1,2 @@
+--Enter the dashboard Jaql URL - Ideally all the widgets in the dashboard have the same jaql url and the different payloads.
+Eg: https://thoughtworks-dev.sisense.com/api/datasources/***/jaql

@@ -1,0 +1,17 @@
+version: '2'
+services:
+  code:
+    build:
+      context: .
+      args:
+        GCP_CREDENTIALS: $GCP_CREDENTIALS
+    command: bash install.sh apitest
+    container_name: test_app
+    tty: true
+    environment:
+      - sisense_username=$sisense_username
+      - sisense_password=$sisense_password
+      - from_addr=$from_addr
+      - to_addr=$to_addr
+      - from_password=$from_password
+      - auth_url=$auth_url

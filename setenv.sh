@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+export sisense_username=''
+export sisense_password=''
+export auth_url=''
+export GOOGLE_APPLICATION_CREDENTIALS=''
+export country=''
+export from_date=''
+export to_date=''
+export Reporting_category_1=''
+export Reporting_category_2=''
+export subproject_name=''
+export employee_name=''
+export employee_grade=''
+export employee_role=''
+export office=''
+
+#Mailing
+export from_addr=''
+export to_addr=''
+export from_password=''
+export TASK=''
