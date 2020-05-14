@@ -1,0 +1,6 @@
+google
+pytest==5.2.0
+requests
+pytest-html
+google-cloud-bigquery
+pybigquery
