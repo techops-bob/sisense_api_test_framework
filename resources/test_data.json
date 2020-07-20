@@ -1,0 +1,9 @@
+{
+  "dashboard":
+  [
+    {"Data Source": ""},
+    {
+    "Working Country" : {"Values": [""], "QueryParamNm": ["country"], "ParamCond": "in", "FilterCond": ["members"]},
+    "Days in Date" : {"Values": ["2020-01-01","2020-01-31"], "QueryParamNm": ["calendar_id"], "ParamCond":  "between","FilterCond": ["from","to"]}
+  }]
+}

@@ -14,13 +14,13 @@ class SendMail:
         # msg = MIMEMultipart()
         msg['Subject'] = 'Sisense API Monitoring report'
         # set the 'from' address,
-        from_addr = os.getenv('from_addr')
+        from_addr = os.getenv('FROM_ADDR')
         msg['From'] = from_addr
         # set the 'to' addresses
-        to_addr = os.getenv('to_addr')
+        to_addr = os.getenv('TO_ADDR')
         # msg['To'] = ", ".join(to_addr)
         msg['To'] = to_addr
-        from_password = os.getenv('from_password')
+        from_password = os.getenv('FROM_PASSWORD')
         # setup the email server,
         part1 = MIMEText(html, 'html', 'utf-8')
         msg.attach(part1)
@@ -31,9 +31,10 @@ class SendMail:
         print(from_addr)
         server.login(from_addr, from_password)
         # send the email
-        server.sendmail(from_addr, to_addr, msg.as_string())
+        server.sendmail(from_addr, to_addr.split(','), msg.as_string())
         # disconnect from the server
         server.quit()
         return
+
 
 SendMail.send_mail_to_all()

@@ -1,2 +1,0 @@
---Enter the Authenticaor URL
-Eg : https://thoughtworks-dev.sisense.com/api/*

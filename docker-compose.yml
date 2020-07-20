@@ -4,14 +4,19 @@ services:
     build:
       context: .
       args:
-        GCP_CREDENTIALS: $GCP_CREDENTIALS
+        GOOGLE_APPLICATION_CREDENTIALS: $GOOGLE_APPLICATION_CREDENTIALS
     command: bash install.sh apitest
-    container_name: test_app
     tty: true
     environment:
-      - sisense_username=$sisense_username
-      - sisense_password=$sisense_password
-      - from_addr=$from_addr
-      - to_addr=$to_addr
-      - from_password=$from_password
-      - auth_url=$auth_url
+      - SISENSE_USERNAME=$SISENSE_USERNAME
+      - SISENSE_PASSWORD=$SISENSE_PASSWORD
+      - ENVIRONMENT=$ENVIRONMENT
+      - DASHBOARDS=$DASHBOARDS
+      - TEST_DATA=$TEST_DATA
+      - FROM_ADDR=$FROM_ADDR
+      - TO_ADDR=$TO_ADDR
+      - FROM_PASSWORD=$FROM_PASSWORD
+      - THREAD=$THREAD
+
+
+

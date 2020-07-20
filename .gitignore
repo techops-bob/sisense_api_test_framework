@@ -131,3 +131,18 @@ dmypy.json
 
 __init__.py
 .idea*
+*.pyc
+.cache/
+.idea/
+*.iml
+setenv.sh
+package-lock.json
+.env*
+Pipfile
+Pipfile.lock
+.vscode/
+assets/
+*temp.py
+*.html
+gcp_credentials.json
+.DS_Store

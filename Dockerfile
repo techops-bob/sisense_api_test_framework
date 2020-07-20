@@ -1,8 +1,13 @@
-FROM python:3.6
+FROM python:3.7.7-slim-buster
 #FROM python:2.7.10
 RUN apt-get update
 # copy file
 WORKDIR /app
 COPY ./ /app
+
+#ARG GCP_CREDENTIALS
+#ENV GCP_CREDENTIALS ${GCP_CREDENTIALS}
+#RUN echo ${GCP_CREDENTIALS}
 ENV GOOGLE_APPLICATION_CREDENTIALS="/app/gcp_credentials.json"
+#RUN echo $GCP_CREDENTIALS > $GOOGLE_APPLICATION_CREDENTIALS
 

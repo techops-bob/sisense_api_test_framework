@@ -1,6 +1,7 @@
 google
-pytest==5.2.0
+pytest==5.4.3
 requests
 pytest-html
 google-cloud-bigquery
 pybigquery
+pytest-xdist

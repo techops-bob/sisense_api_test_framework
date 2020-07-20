@@ -1,0 +1,18 @@
+{
+  "jaql": {
+    "table": "",
+    "column": "",
+    "dim": "[]",
+    "datatype": "text",
+    "collapsed": true,
+    "title": "",
+    "panel": "scope",
+    "filter": {
+      "explicit": true,
+      "multiSelection": true
+    }
+  },
+  "disabled": false,
+  "isCascading": true,
+  "panel": "scope"
+}

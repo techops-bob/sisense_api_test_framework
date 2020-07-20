@@ -1,1 +1,0 @@
---Queries to be executed in the Bigquery DB to validate the widget
